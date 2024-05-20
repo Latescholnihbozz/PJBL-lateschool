@@ -43,7 +43,7 @@ if(is_array($row)){
     <div class="wrapper">
         <header class="header">
             <img src="../user/smk8-removebg-preview.png" class="logo" />
-            <h1 class=>PKS SMK N 8 SEMARANG</h1>
+            <h1 class="judul">PKS SMK N 8 SEMARANG</h1>
         </header>
 
         <form action="../user/userpks.php" method="post">
