@@ -2,11 +2,12 @@
  session_start();
  include 'koneksi.php';
 
-if(isset($_POST['login'])){
+if(isset($_POST['loginuser'])){
+    
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $result = mysqli_query($kon, "SELECT * FROM loginpks 
+    $result = mysqli_query($kon, "SELECT * FROM loginuser 
              WHERE username = '$username' and password = '$password'");
              
     $row = mysqli_fetch_array($result);
@@ -33,7 +34,7 @@ if(is_array($row)){
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>PKS login WEB</title>
-    <link rel="stylesheet" href="loginuser.css" />
+    <link rel="stylesheet" href="../user/loginuser.css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
 
