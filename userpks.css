@@ -1,8 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0f1035;
+  min-height: 100vh;
+}
+
 .logo {
-  width: 65px;
-  height: 60px;
+  width: 70px;
+  height: 65px;
   justify-content: center;
 }
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -20,7 +35,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 20;
+  height: 100px;
 }
 
 .kiko {
@@ -34,6 +49,37 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+
+.form .btn {
+  width: 100px;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form .btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.form .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+@media (max-width: 100px) {
+  .form .btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .form .d-flex {
+    flex-direction: column;
+  }
+}
+
+/* 
 .box {
   width: 100%;
   height: 100px;
@@ -72,7 +118,7 @@
   position: absolute;
   top: 85%;
   left: 42%;
-}
+} */
 
 /* .btn {
   width: 200px;
